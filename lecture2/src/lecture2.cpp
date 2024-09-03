@@ -293,10 +293,10 @@ int main() {
 
     //</> 17
     //=====================
-    // int a{3};
-    // int b{2};
-    // std::cout << "Type of result: " << typeid(a / b).name() << '\n';
-    // std::cout << "Value of result: " << a / b << '\n';
+    int a{3};
+    int b{2};
+    std::cout << "Type of result: " << typeid(a / b).name() << '\n';
+    std::cout << "Value of result: " << static_cast<double>(a) / b << '\n';
 
     //</> 19
     //=====================
