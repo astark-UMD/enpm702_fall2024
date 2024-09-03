@@ -1,4 +1,4 @@
-#include "lecture2.hpp"
+//#include "lecture2.hpp"
 
 #include <iomanip>  // for output manipulator std::setprecision()
 #include <iostream>
@@ -62,11 +62,12 @@ int main() {
     //  int _break1; // OK
     //  // int 1Break;  // Error: expected unqualified-id before numeric constant
 
-    //</> 2
-    //=====================
-    //  int number = 20;
-    //  std::cout << sizeof(number) << '\n'; // 4 bytes on my machine
-    //  std::cout << sizeof(int) << '\n';    // 4 bytes on my machine
+    // </> 2
+    // =====================
+    //  int number{20};
+    //  std::cout << "sizeof(number): " << sizeof(number) << '\n'; // 4 bytes on my machine
+    //  std::cout << "sizeof(int): " << sizeof(int) << '\n';    // 4 bytes on my machine
+    //  std::cout << "address of number: " << &number << '\n';
 
     //</> 3
     //=====================
@@ -82,6 +83,10 @@ int main() {
     // std::cout << a << '\n';                                       // 0
     // double b{};                                                   // initialized to 0.0
     // std::cout << b << '\n';                                       // 0
+    // std::cout << std::fixed << std::setprecision(1) << b << '\n'; // 0.0
+    // int c{0};
+    // b = c + 3;
+    // std::cout << b << '\n';
     // std::cout << std::fixed << std::setprecision(1) << b << '\n'; // 0.0
 
     //</> 5
