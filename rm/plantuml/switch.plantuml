@@ -1,0 +1,16 @@
+@startuml
+start
+:Evaluate Expression;
+switch (Expression Value?)
+case (Case 1)
+    :Execute Case 1 Block;
+case (Case 2)
+    :Execute Case 2 Block;
+case (Case 3)
+    :Execute Case 3 Block;
+case (Default)
+    :Execute Default Block;
+endswitch
+:Continue with Program;
+stop
+@enduml

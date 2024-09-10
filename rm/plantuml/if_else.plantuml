@@ -1,0 +1,13 @@
+@startuml
+start
+
+:Evaluate Condition;
+if (Condition True?) then (yes)
+    :Execute statement_true;
+else (no)
+    :Execute statement_false;
+endif
+:Continue with Program;
+
+stop
+@enduml

@@ -1,0 +1,19 @@
+@startuml
+start
+
+:Evaluate condition1;
+if (condition1 True?) then (yes)
+    :Execute statement1;
+else (no)
+    :Evaluate condition2;
+    if (condition2 True?) then (yes)
+        :Execute statement2;
+    else (no)
+        :Execute statement3;
+    endif
+endif
+
+:Continue with Program;
+
+stop
+@enduml

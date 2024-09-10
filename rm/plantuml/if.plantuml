@@ -1,0 +1,13 @@
+@startuml
+start
+
+:Start of Program;
+if (Condition true?) then (Yes)
+    :Execute Statement;
+else (No)
+    :Skip Statement;
+endif
+:Continue with Program;
+
+stop
+@enduml
