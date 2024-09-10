@@ -78,14 +78,18 @@ int main() {
 
     //</> 6-2
     //=====================
-    // int a{2};
-    // int *p_int{&a};
-    // int **q_int{&p_int};
-    // int ***r_int{&q_int};
+    int a{2};
+    int *p_int{&a};
+    int **q_int{&p_int};
+    int ***r_int{&q_int};
 
-    // std::cout << *p_int << '\n';
-    // std::cout << **q_int << '\n';
-    // std::cout << ***r_int << '\n';
+    std::cout << p_int << '\n';
+    std::cout << *q_int << '\n';
+    std::cout << **r_int << '\n';
+    std::cout << &a << '\n';
+    std::cout << *p_int << '\n';
+    std::cout << **q_int << '\n';
+    std::cout << ***r_int << '\n';
 
     //</> 7
     //=====================
