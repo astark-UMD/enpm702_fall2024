@@ -6,7 +6,7 @@ project(lecture3 VERSION 0.1.0)
 add_compile_options(-Wall)
 
 # Add executable
-add_executable(lecture2 lecture2/src/lecture2.cpp)
+add_executable(lecture3 lecture3/src/lecture3.cpp)
 
 # add_custom_command(TARGET lecture3 POST_BUILD
 #     COMMAND ./lecture3 | c++filt -t
@@ -36,4 +36,4 @@ add_executable(lecture2 lecture2/src/lecture2.cpp)
 
 
 # Set C++ standard to C++17
-set_property(TARGET lecture2 PROPERTY CXX_STANDARD 17)
+set_property(TARGET lecture3 PROPERTY CXX_STANDARD 17)
