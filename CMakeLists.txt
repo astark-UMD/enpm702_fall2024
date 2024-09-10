@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.20.0)
-project(lecture2 VERSION 0.1.0)
+project(lecture3 VERSION 0.1.0)
 #project(lecture1 VERSION 0.1.0)
 
 # Compilation flags
