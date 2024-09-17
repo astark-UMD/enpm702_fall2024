@@ -1,6 +1,5 @@
 cmake_minimum_required(VERSION 3.20.0)
 project(lecture3 VERSION 0.1.0)
-#project(lecture1 VERSION 0.1.0)
 
 # Compilation flags
 add_compile_options(-Wall)
@@ -15,6 +14,12 @@ add_executable(lecture3 lecture3/src/lecture3.cpp)
 #     VERBATIM
 # )
 
+# add_custom_target(demangle ALL
+#     COMMAND ./lecture3 | c++filt -t
+#     DEPENDS lecture3
+#     WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
+# )
+
 add_custom_command(TARGET lecture3 POST_BUILD
     COMMAND valgrind --show-error-list=yes --leak-check=full --show-leak-kinds=all --track-origins=yes ./lecture3
     WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
@@ -22,11 +27,6 @@ add_custom_command(TARGET lecture3 POST_BUILD
     VERBATIM
 )
 
-add_custom_target(demangle ALL
-    COMMAND COMMAND ./lecture3 | c++filt -t
-    DEPENDS lecture3
-    WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
-)
 
 add_custom_target(run_valgrind ALL
     COMMAND valgrind --show-error-list=yes --leak-check=full --show-leak-kinds=all --track-origins=yes ./lecture3
