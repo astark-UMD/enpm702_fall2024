@@ -113,10 +113,12 @@ int main() {
 
     //</> 9
     //=====================
-    // std::string quote{"Just a flesh wound!"};
-    // /*
-    //     write a for loop to print each character of the string
-    // */
+    std::string quote{"Just a flesh wound!"};
+    // std::cout << lengthofquote << '\n';
+    for(size_t i{0}; i < quote.size(); i++){
+        std::cout << quote[i];
+    }
+    std::cout << '\n';
 
     //</> 10
     //=====================
