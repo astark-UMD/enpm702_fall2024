@@ -10,6 +10,15 @@
  *
  */
 
+/**
+ * @brief 
+ * 
+ * @param number 
+ */
 void print_number(int number);
 
+/**
+ * @brief 
+ * 
+ */
 void prompt_user();
