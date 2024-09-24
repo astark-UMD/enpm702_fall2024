@@ -12,6 +12,7 @@
 #include <iostream>
 #include <typeinfo>  // needed for typeid
 #include <vector>
+#include "lecture5.hpp"
 
 
 //</> 1
@@ -72,26 +73,26 @@
 
 //</> 5
 //=====================
-// void prompt_user() {
-//     std::cout << "Enter a number: ";
-//     int num{};
-//     std::cin >> num;
-//     print_number(num);
-// }
+void prompt_user() {
+    std::cout << "Enter a number: ";
+    int num{};
+    std::cin >> num;
+    print_number(num);
+}
 
-// void print_number(int number) {
-//     if (number == -1)
-//         return;
+void print_number(int number) {
+    if (number == -1)
+        return;
 
-//     if (number > 0)
-//         std::cout << "The number is: " << number << "\n";
-//     else
-//         prompt_user();
-// }
+    if (number > 0)
+        std::cout << "The number is: " << number << "\n";
+    else
+        prompt_user();
+}
 
-// int main() {
-//     prompt_user();
-// }
+int main() {
+    prompt_user();
+}
 
 //</> 6
 //=====================
