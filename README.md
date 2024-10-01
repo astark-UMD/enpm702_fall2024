@@ -47,9 +47,35 @@ This lecture provides an in-depth discussion on pointers, references, memory all
 
 # Lecture 4: The C++ Standard Library - Containers
 
+This lecture provides an in-depth discussion for the following containers from the C++ Standard Library.
+  - std::string
+  - std::array
+  - std::vector
+
 # Lecture 5: Functions
 
+This lecture covers C++ functions, including:
+
+  - Declaration, definition, and usage
+  - Argument passing methods: value, reference, const-reference, pointer
+  - Return types: value and reference
+  - Benefits: modularity, reusability, debugging
+  - Advanced topics:
+    - Function overloading
+    - Default arguments
+    - Stack frames
+    - Recursion
+    - main() function structure
+
+Practical exercises reinforce these concepts, preparing for the upcoming smart pointers lecture.
+
 # Lecture 6: Smart Pointers
+
+Overview of smart pointers:
+
+  - Unique pointers
+  - Shared pointers
+  - Weak pointers
 
 # Lecture 7: OOP (Part 1)
 
