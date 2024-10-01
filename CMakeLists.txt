@@ -1,26 +1,26 @@
 cmake_minimum_required(VERSION 3.20.0)
-project(lecture5 VERSION 0.1.0)
+project(lecture6 VERSION 0.1.0)
 
 # Add include directory
-include_directories(lecture5/include)
+include_directories(lecture6/include)
 
 # Compilation flags
 add_compile_options(-Wall -pedantic-errors)
 
 # Add executable
-add_executable(lecture5 lecture5/src/lecture5.cpp)
+add_executable(lecture6 lecture6/src/lecture6.cpp)
 
 
-# add_custom_command(TARGET lecture5 POST_BUILD
-#     COMMAND ./lecture5 | c++filt -t
+# add_custom_command(TARGET lecture6 POST_BUILD
+#     COMMAND ./lecture6 | c++filt -t
 #     WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
 #     COMMENT "Resolve name mangling"
 #     VERBATIM
 # )
 
 # add_custom_target(demangle ALL
-#     COMMAND ./lecture5 | c++filt -t
-#     DEPENDS lecture5
+#     COMMAND ./lecture6 | c++filt -t
+#     DEPENDS lecture6
 #     WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
 # )
 
@@ -40,5 +40,5 @@ add_executable(lecture5 lecture5/src/lecture5.cpp)
 
 
 # Set C++ standard to C++17
-set_property(TARGET lecture5 PROPERTY CXX_STANDARD 17)
+set_property(TARGET lecture6 PROPERTY CXX_STANDARD 17)
 
