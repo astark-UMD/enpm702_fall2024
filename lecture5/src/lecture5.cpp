@@ -73,26 +73,26 @@
 
 //</> 5
 //=====================
-void prompt_user() {
-    std::cout << "Enter a number: ";
-    int num{};
-    std::cin >> num;
-    print_number(num);
-}
+// void prompt_user() {
+//     std::cout << "Enter a number: ";
+//     int num{};
+//     std::cin >> num;
+//     print_number(num);
+// }
 
-void print_number(int number) {
-    if (number == -1)
-        return;
+// void print_number(int number) {
+//     if (number == -1)
+//         return;
 
-    if (number > 0)
-        std::cout << "The number is: " << number << "\n";
-    else
-        prompt_user();
-}
+//     if (number > 0)
+//         std::cout << "The number is: " << number << "\n";
+//     else
+//         prompt_user();
+// }
 
-int main() {
-    prompt_user();
-}
+// int main() {
+//     prompt_user();
+// }
 
 //</> 6
 //=====================
@@ -123,6 +123,7 @@ int main() {
 //</> 8
 //=====================
 // Write swap_values
+// void swap_values(int &x, int &y);
 // int main() {
 //     int x{5};
 //     int y{10};
@@ -130,6 +131,11 @@ int main() {
 //     std::cout << x << ", " << y << '\n';  // 5, 10
 //     swap_values(x, y);
 //     std::cout << x << ", " << y << '\n';  // 10, 5
+// }
+// void swap_values(int &x, int &y){
+//     int holder{x};
+//     x = y;
+//     y = holder;
 // }
 
 //</> 9
