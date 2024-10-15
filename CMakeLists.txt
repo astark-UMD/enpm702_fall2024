@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.20.0)
 project(lecture7 VERSION 0.1.0)
 
 # Add include directory
-include_directories(lecture6/include)
+include_directories(lecture7/include)
 
 # Compilation flags
 add_compile_options(-Wall -pedantic-errors)

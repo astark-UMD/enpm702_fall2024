@@ -51,7 +51,16 @@ std::shared_ptr<int> return_shared_ptr() {
     return p;
 }
 
+int& do_something(){
+        int a{0};
+        return a;
+    }
+
 int main() {
+    
+    int b {do_something()};
+    std::cout << b << '\n';
+
     //</> 1
     //=====================
     // std::unique_ptr<int> u1 = std::make_unique<int>(5);
